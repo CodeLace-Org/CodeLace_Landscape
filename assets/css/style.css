@@ -71,14 +71,12 @@ a{
 .purple{
     color: #c6afff;
 }
-.yellow{
-    color: #E9DB77;
-}
 /*Colors for text (use with span)*/
 
 /*navbar*/
 .navbar{
     background-color: #18122B;
+    opacity: 0.9;
     display:grid;
     grid-template-columns: 50% 50%;
     position:fixed;
@@ -107,6 +105,7 @@ a{
 .sectionMain{
     margin-top: 60px;
     border-radius: 5px;
+    margin-bottom: 3%;
     display:grid;
     grid-template-columns: 50% 50%;
     height: 100vh;
@@ -129,128 +128,58 @@ a{
 }
 /*sectionMain*/
 
-/*sectionHighlights*/
-.articleHighlights {
-    /* background-color: lightsalmon;
-    border: 3px solid white; */
+/*sectionPrice*/
+.articlePriceInfo{
+    text-align: center;
+}
+
+.sectionPrice{
+    height: 100vh;
+    align-items: center;
     display: grid;
-    margin-bottom: 50px;
-    column-gap: 50px;
 }
 
-/* .container div {
-    background: lightblue;
-    border: 2px solid #09f;
-} */
-
-.img-left .item-1 {
-    /* background: lightgreen;
-    border: 2px solid #0c3; */
-    grid-column: 3/4;
-    z-index:2;
-    align-self: end;
-    width: 300px;
+.articlePriceImg .img{
+    max-width: 80%;
 }
 
-.img-left .item-2 {
-    /* background: lightgreen;
-    border: 2px solid #0c3; */
-    grid-column: 2/3;
-    grid-row: 1/3;
-    z-index:2;
-    justify-self: end;
+.articlePriceImg{
+    display: flex;
+    justify-content: center;
+}
+/*sectionPrice*/
+
+/*sectionPlus*/
+.articlePlus{
+    text-align: left;
 }
 
-.img-left .item-3 {
-    grid-column: 3/4;
-    grid-row: 2/3;
-    z-index:2;
-    width: 380px;
+.sectionPlus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2a223e;
+    height: 100vh;
 }
+/*sectionPlus*/
 
-.img-left .item-4 {
-    grid-column: 1/5;
-    grid-row: 2/3;
-    z-index:1;
+/*sectionFooter*/
+.articleFooterInfo{
+    text-align: center;
 }
-
-.img-right .item-1 {
-    /* background: lightgreen;
-    border: 2px solid #0c3; */
-    grid-column: 2/3;
-    z-index:2;
-    justify-self: end;
-    align-self: end;
-    width: 270px;
-    .title{
-        text-align: end;
-    }
+.sectionFooter{
+    border: 1px solid #2a223e;
+    background-color: #2a223e;
+    margin: 0px;
+    color: #FFFFFF;
+    padding-bottom: 1.5%;
 }
-
-.img-right .item-2 {
-    /* background: lightgreen;
-    border: 2px solid #0c3; */
-    grid-column: 3/4;
-    grid-row: 1/3;
-    z-index:2;
-    justify-self: start;
+.sectionFooter > .articleFooterInfo > p{
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
-
-.img-right .item-3 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    z-index:2;
-    width: 270px;
-    justify-self: end;
-    .text{
-        text-align: end;
-    }
-}
-
-.img-right .item-4 {
-    background: #E876BB;
-    grid-column: 1/5;
-    grid-row: 2/3;
-    z-index:1;
-}
-
-.portafolio{
-    width: 300px;
-    height: 300px
-}
-
-.tuerca{
-    width: 400px;
-    height: 384px;
-}
-
-.copa{
-    width: 350px;
-    height: 350px
-}
-
-.item-1 .title{
-    font-size: 35px;
-    color: #84f4ff;
-}
-
-.item-3 .text{
-    font-size: 23px;
-    color: #18122B;
-}
-
-.purple-bg{
-    background: #c6afff;
-}
-
-.yellow-bg{
-    background: #E9DB77;
-}
-
-.pink-bg{
-    background: #E876BB;
-}
-/*sectionHighlights*/
+/*sectionFooter*/
 
 @media screen and (max-width: 1380px){
     .mainImg{
@@ -274,41 +203,6 @@ a{
     .sectionMain{
         grid-template-columns: 100% 0%;
     }
-}
-@media screen and (max-width: 830px){
-    /*sectionHighlights*/
-    .portafolio{
-        width: 32vw;
-        height: 32vw;
-    }
-    
-    .tuerca{
-        width: 35vw;
-        height: 32vw;
-    }
-    
-    .copa{
-        width: 30vw;
-        height: 30vw;
-    }
-    .img-right .item-1, .img-right .item-3{
-        width: auto;
-    }
-    .img-left .item-1, .img-left .item-3{
-        width: auto;
-    }
-    .item-1 .title{
-        font-size: 5vw;
-    }
-    
-    .item-3 .text{
-        font-size: 4vw;
-    }
-
-    .articleHighlights {
-        column-gap: 0;
-    }
-    /*sectionHighlights*/
 }
 @media screen and (max-width: 450px){
     .CodeLace{
