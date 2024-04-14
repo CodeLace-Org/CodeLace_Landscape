@@ -417,6 +417,16 @@ a {
 	}
 }
 
+/*LastSection*/
+.LastSection{
+	height: 100vh;
+	margin: 10rem 0;
+}
+.articleLastSectionInfo{
+	height: 100%;
+    text-align: center;
+    align-content: center;
+}
 @media screen and (max-width: 1500px) {
     .mainImg{
         filter: brightness(30%);
@@ -447,7 +457,7 @@ a {
 @media screen and (max-width: 1380px){
   /*sectionPrices */
 	.sectionPrices {
-
+		height: auto;
 		div {
 			flex-direction: column;
 			align-items: center;
