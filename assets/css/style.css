@@ -25,6 +25,8 @@ a{
 .subrayado{
     background-color: #84f4ff;
     color: #18122B;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .buttonDiv{
@@ -252,6 +254,47 @@ a{
 }
 /*sectionHighlights*/
 
+/*sectionRoutes*/
+.sectionRoutes{
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+.sectionRoutes p{
+    margin: 11px;
+}
+.phone{
+    width: 410px;
+    height: 358px;
+}
+.dashboard{
+    width: 426px;
+    height: 336px;
+}
+.web{
+    width: 303px;
+    height: 303px;
+}
+.articleImg{
+    height: 360px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.column{
+    flex-basis: 26%; 
+    width: 10vh;
+}
+.column p{
+    font-weight: 1000;
+    margin: 10px;
+    font-size: 48px;
+}
+/*sectionRoutes*/
 @media screen and (max-width: 1380px){
     .mainImg{
         filter: brightness(30%);
@@ -328,5 +371,19 @@ a{
     }
     .sectionMain{
         grid-template-columns: 100% 0%;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .sectionRoutes{
+        height: auto;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .column {
+        flex-basis: auto; 
+        width: auto;
+        margin-bottom: 30px;
     }
 }
