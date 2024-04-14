@@ -328,15 +328,15 @@ a {
 		text-align: center;
 		margin: 100px 0;
 
-		h1 {
+		/* h1 {
 			color: #84f4ff;
 			font-size: 80px;
-		}
+		} */
 
-		p {
+		/* p {
 			color: #c6afff;
 			font-size: 48px;
-		}
+		} */
 	}
 
 	div {
@@ -447,15 +447,6 @@ a {
 @media screen and (max-width: 1380px){
   /*sectionPrices */
 	.sectionPrices {
-		header {
-			h1 {
-				font-size: 60px;
-			}
-
-			p {
-				font-size: 30px;
-			}
-		}
 
 		div {
 			flex-direction: column;
@@ -525,6 +516,24 @@ a {
     .title{
         font-size: 40px;
     }
+	.phone{
+		width: 80vw;
+		height: 75vw;
+	}
+	.dashboard{
+		width: 82vw;
+		height: 75vw;
+	}
+	.web{
+		width: 70vw;
+		height: 70vw;
+	}
+	.container .column .text{
+		font-size: 7vw;
+	}
+	.articleImg{
+		height: 82vw;
+	}
     .subtitle{
         font-size: 30px;
     }
