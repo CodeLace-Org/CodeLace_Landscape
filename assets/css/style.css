@@ -84,6 +84,10 @@ a {
 	color: #E9DB77;
 }
 
+.gray{
+	color: #C6AFFF;
+}
+
 /*Colors for text (use with span)*/
 
 /*navbar*/
@@ -142,7 +146,6 @@ a {
 	top: 0px;
 	transition: transform 0.5s;
 }
-
 /*sectionMain*/
 
 /*sectionHighlights*/
@@ -439,6 +442,59 @@ a {
 	margin-top: 10%;
 }
 /*LastSection*/
+
+/*FooterSection*/
+#CodeLaceLogo{
+	height: 50px;
+	width: 50px;
+}
+.FooterSection{
+	background-color: #2A223E;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.FooterTop{
+	margin: 20px 20px 0 20px;
+	display: flex;
+	justify-content: space-between;
+}
+.FooterBottom{
+	margin: 0 20px 0 20px;
+	display: flex;
+	justify-content: space-between;
+}
+.FooterFeatures{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+.FooterLinks{
+	display: flex;
+	gap: 20px
+}
+.FooterLinks > a > i{
+	font-size: 30px;
+	color: #84f4ff;
+}
+.FooterBottomLeft{
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+.info:hover{
+	background-color: #84f4ff;
+    color: #18122B;
+	transition: 0.2s;
+	cursor: pointer;
+}
+.light{
+	font-size: 15px;
+}
+.private{
+	font-size: 10px;
+}
+/*FooterSection*/
+
 @media screen and (max-width: 1500px) {
     .mainImg{
         filter: brightness(30%);
@@ -484,7 +540,6 @@ a {
 			}
 		}
 	}
-
 	/*sectionPrices */
 }
 
@@ -500,6 +555,9 @@ a {
     .sectionMain{
         grid-template-columns: 100% 0%;
     }
+	.light{
+		font-size: 15px;
+	}
 }
 @media screen and (max-width: 830px){
     /*sectionHighlights*/
@@ -554,7 +612,18 @@ a {
 	.LastSection div{
 		width: 90%;
 	}
+	.light{
+		font-size: 12px;
+	}
+	.private{
+		font-size: 8px;
+	}
     /*sectionHighlights*/
+}
+@media screen and (max-width: 600px){
+	#CodeLaceLogo{
+		display: none;
+	}
 }
 @media screen and (max-width: 450px){
     .CodeLace{
@@ -594,4 +663,14 @@ a {
     .sectionMain{
         grid-template-columns: 100% 0%;
     }
+	.light{
+		font-size: 10px;
+	}
+	.private{
+		font-size: 5px;
+	}
+	.FooterLinks > a > i{
+		font-size: 20px;
+		color: #84f4ff;
+	}
 }
